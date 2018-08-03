@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.1.3/css/ol.css" type="text/css">
+    <style>
+      .map {
+        height: 400px;
+        width: 100%;
+      }
+    </style>
+    <script src="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.1.3/build/ol.js"></script>
+    <title>OpenLayers example</title>
+  </head>
+  <body>
+    <h1 id="mapTitle">A Map of the World...</h1>
+    <p>Click the button to get your coordinates.</p>
+
+<button type="submit" onclick=window.location.href="jcinteract.html">Hudson County, NJ, USA</button>
+
+<p id="demo"></p>
+    <div id="map" class="map"></div>
+    <script type="text/javascript">
+      var map = new ol.Map({
+        target: 'map',
+        layers: [
+          new ol.layer.Tile({
+            source: new ol.source.OSM()
+          })
+        ],
+        view: new ol.View({
+          center: ol.proj.fromLonLat([37.41, 8.82]),
+          zoom: 4
+        })
+      });
+    </script>
+    <h1>NEW YORK CITY, NEW YORK</h1>
+    <img src="https://wallpaperstudio10.com/static/wpdb/wallpapers/1920x1080/183879.jpg">
+    <h2>The basis/theme for this whole page - NYC!</h2>
+    <p></p>
+    <h1>VANCOUVER, CANADA</h1>
+    <img src="https://i1.wp.com/owengreaves.com/wp-content/uploads/2012/01/vancouver.jpg">
+    <h2>:)</h2>
+    <p></p>
+    <h1>BRUGES, BELGIUM</h1>
+    <img src="http://expediablog.co.uk/wp-content/uploads/2014/10/Bruges-2.jpg">
+    <h2>:)</h2>
+    <p></p>
+    <h1>ROME, ITALY</h1>
+    <img src="https://steemitimages.com/0x0/https://imgp.golos.io/0x0/https://cdn.luggageforward.com/wp-content/uploads/2015/02/Trevi-fountain.jpg">
+    <h2>:)</h2>
+    <p></p>
+    <h1> HOKKAIDO, JAPAN</h1>
+    <img src="https://cdn.shopify.com/s/files/1/0463/6201/files/20110612_86_compressed_grande.jpg?1097">
+        <h2>:)</h2>
+  </body>
+</html>
